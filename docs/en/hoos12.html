@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset='utf-8'>
+  <meta name='viewport' content='width=device-width,initial-scale=1'>
+
+  <title>Proqrcode Survey</title>
+  <link rel='stylesheet' href='../build/bundle.css'>
+  <script>
+    var prom = {
+      "code": "hoos12",
+      "name": "HOOS12 Hip Survey",
+      "lang": "en",
+      "ver": 1,
+      "intro": "Instruction: This survey asks for your views about your hip. If you are unsure about how to answer a question, please give the best answer you can.",
+      "sections": [
+        {
+          "code": "A",
+          "name": "Pain Frequency",
+          "intro": ""
+        },{
+          "code": "B",
+          "name": "Pain Level",
+          "intro": "What amount of hip pain have you experienced the last week during the following activities?"
+        },{
+          "code": "C",
+          "name": "Function, daily living",
+          "intro": "The following questions concern your physical function. By this we mean your ability to move around and to look after yourself. For each of the following activities please indicate the degree of difficulty you have experienced in the last week due to your hip."
+        },{
+          "code": "D",
+          "name": "Quality of Life",
+          "intro": "Quality of Life"
+        }
+      ],
+      "questions": [
+        {
+          "code": "A1", "type": "radio",
+          "name": "How often do you experience hip pain?",          
+          "answers": [
+            {"code": "A", "name": "Never", "score": 0},
+            {"code": "B", "name": "Monthly", "score": 1},
+            {"code": "C", "name": "Weekly", "score": 2},
+            {"code": "D", "name": "Daily", "score": 3},
+            {"code": "E", "name": "Always", "score": 4}
+          ]
+        },{
+          "code": "B1", "type": "radio",
+          "name": "Walking on a flat surface",          
+          "answers": [
+            {"code": "A", "name": "None", "score": 0},
+            {"code": "B", "name": "Mild", "score": 1},
+            {"code": "C", "name": "Moderate", "score": 2},
+            {"code": "D", "name": "Severe", "score": 3},
+            {"code": "E", "name": "Extreme", "score": 4}
+          ]
+        },{
+          "code": "B2", "type": "radio",
+          "name": "Going up or down stairs",
+          "answers": [
+            {"code": "A", "name": "None", "score": 0},
+            {"code": "B", "name": "Mild", "score": 1},
+            {"code": "C", "name": "Moderate", "score": 2},
+            {"code": "D", "name": "Severe", "score": 3},
+            {"code": "E", "name": "Extreme", "score": 4}
+          ]
+        },{
+          "code": "B3", "type": "radio",
+          "name": "Sitting or lying",          
+          "answers": [
+            {"code": "A", "name": "None", "score": 0},
+            {"code": "B", "name": "Mild", "score": 1},
+            {"code": "C", "name": "Moderate", "score": 2},
+            {"code": "D", "name": "Severe", "score": 3},
+            {"code": "E", "name": "Extreme", "score": 4}
+          ]
+        },{
+          "code": "C1", "type": "radio",
+          "name": "Rising from sitting",          
+          "answers": [
+            {"code": "A", "name": "None", "score": 0},
+            {"code": "B", "name": "Mild", "score": 1},
+            {"code": "C", "name": "Moderate", "score": 2},
+            {"code": "D", "name": "Severe", "score": 3},
+            {"code": "E", "name": "Extreme", "score": 4}
+          ]
+        },{
+          "code": "C2", "type": "radio",
+          "name": "Standing",
+          "answers": [
+            {"code": "A", "name": "None", "score": 0},
+            {"code": "B", "name": "Mild", "score": 1},
+            {"code": "C", "name": "Moderate", "score": 2},
+            {"code": "D", "name": "Severe", "score": 3},
+            {"code": "E", "name": "Extreme", "score": 4}
+          ]
+        },{
+          "code": "C3", "type": "radio",
+          "name": "Getting in/out of a car",
+          "answers": [
+            {"code": "A", "name": "None", "score": 0},
+            {"code": "B", "name": "Mild", "score": 1},
+            {"code": "C", "name": "Moderate", "score": 2},
+            {"code": "D", "name": "Severe", "score": 3},
+            {"code": "E", "name": "Extreme", "score": 4}
+          ]
+        },{
+          "code": "C4", "type": "radio",
+          "name": "Walking on an uneven surface",          
+          "answers": [
+            {"code": "A", "name": "None", "score": 0},
+            {"code": "B", "name": "Mild", "score": 1},
+            {"code": "C", "name": "Moderate", "score": 2},
+            {"code": "D", "name": "Severe", "score": 3},
+            {"code": "E", "name": "Extreme", "score": 4}
+          ]
+        },{
+          "code": "D1", "type": "radio",
+          "name": "How often are you aware of your hip problem?",          
+          "answers": [
+            {"code": "A", "name": "Never", "score": 0},
+            {"code": "B", "name": "Monthly", "score": 1},
+            {"code": "C", "name": "Weekly", "score": 2},
+            {"code": "D", "name": "Daily", "score": 3},
+            {"code": "E", "name": "Constantly", "score": 4}
+          ]
+        },{
+          "code": "D2", "type": "radio",
+          "name": "Have you modified your life style to avoid potentially damaging activities to your hip?",
+          "answers": [
+            {"code": "A", "name": "Not at all", "score": 0},
+            {"code": "B", "name": "Mildly", "score": 1},
+            {"code": "C", "name": "Moderately", "score": 2},
+            {"code": "D", "name": "Severely", "score": 3},
+            {"code": "E", "name": "Totally", "score": 4}
+          ]
+        },{
+          "code": "D3", "type": "radio",
+          "name": "How much are you troubled with lack of confidence in your hip?", 
+          "answers": [
+            {"code": "A", "name": "Not at all", "score": 0},
+            {"code": "B", "name": "Mildly", "score": 1},
+            {"code": "C", "name": "Moderately", "score": 2},
+            {"code": "D", "name": "Severely", "score": 3},
+            {"code": "E", "name": "Extremely", "score": 4}
+          ]
+        },{
+          "code": "D4", "type": "radio",
+          "name": "In general, how much difficulty do you have with your hip?", 
+          "answers": [
+            {"code": "A", "name": "None", "score": 0},
+            {"code": "B", "name": "Mild", "score": 1},
+            {"code": "C", "name": "Moderate", "score": 2},
+            {"code": "D", "name": "Severe", "score": 3},
+            {"code": "E", "name": "Extreme", "score": 4}
+          ]
+        }
+      ]
+    }
+  </script>
+  <script defer src='../build/bundle.js'></script>
+</head>
+<body>
+</body>
+</html>

@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset='utf-8'>
+  <meta name='viewport' content='width=device-width,initial-scale=1'>
+
+  <title>Proqrcode Survey</title>
+  <link rel='stylesheet' href='../build/bundle.css'>
+  <script>
+    var prom = {
+      "code": "womac",
+      "name": "WOMAC Survey Form",
+      "lang": "en",
+      "ver": 1,
+      "intro": "Instruction: 24 Questions will be asked about your hip or knee pain. If you are unsure about how to answer a question, please give the best answer you can.",
+      "sections": [
+        {
+          "code": "A",
+          "name": "Pain",
+          "intro": "Think about the pain you felt in your hip/knee during the last 48 hours. How much pain do you have?"
+        },{
+          "code": "B",
+          "name": "Stiffness",
+          "intro": "Think about the stiffness (not pain) you have in your hip/knee during the last 48 hours. Stiffness is a sensation of decreased ease in moving your joint."
+        },{
+          "code": "C",
+          "name": "Physical Function",
+          "intro": "Think about the difficulty you had in doing the following daily physical activities due to your hip/knee during the last 48 hours. By this we mean your ability to move around and look after yourselft. What degree of difficulty do you have?"
+        }
+      ],
+      "questions": [
+        {
+          "code": "A1", "type": "radio",
+          "name": "Walking on a flat surface",          
+          "answers": [
+            {"code": "A", "name": "None", "score": 0},
+            {"code": "B", "name": "Mild", "score": 1},
+            {"code": "C", "name": "Moderate", "score": 2},
+            {"code": "D", "name": "Severe", "score": 3},
+            {"code": "E", "name": "Extreme", "score": 4}
+          ]
+        },{
+          "code": "A2", "type": "radio",
+          "name": "Going up and down stairs",          
+          "answers": [
+            {"code": "A", "name": "None", "score": 0},
+            {"code": "B", "name": "Mild", "score": 1},
+            {"code": "C", "name": "Moderate", "score": 2},
+            {"code": "D", "name": "Severe", "score": 3},
+            {"code": "E", "name": "Extreme", "score": 4}
+          ]
+        },{
+          "code": "A3", "type": "radio",
+          "name": "At night while in bed, pain disturbs your sleep",          
+          "answers": [
+            {"code": "A", "name": "None", "score": 0},
+            {"code": "B", "name": "Mild", "score": 1},
+            {"code": "C", "name": "Moderate", "score": 2},
+            {"code": "D", "name": "Severe", "score": 3},
+            {"code": "E", "name": "Extreme", "score": 4}
+          ]
+        },{
+          "code": "A4", "type": "radio",
+          "name": "Sitting or lying",          
+          "answers": [
+            {"code": "A", "name": "None", "score": 0},
+            {"code": "B", "name": "Mild", "score": 1},
+            {"code": "C", "name": "Moderate", "score": 2},
+            {"code": "D", "name": "Severe", "score": 3},
+            {"code": "E", "name": "Extreme", "score": 4}
+          ]
+        },{
+          "code": "A5", "type": "radio",
+          "name": "Standing upright",          
+          "answers": [
+            {"code": "A", "name": "None", "score": 0},
+            {"code": "B", "name": "Mild", "score": 1},
+            {"code": "C", "name": "Moderate", "score": 2},
+            {"code": "D", "name": "Severe", "score": 3},
+            {"code": "E", "name": "Extreme", "score": 4}
+          ]
+        },{
+          "code": "B1", "type": "radio",
+          "name": "How severe is your stiffness after first awakening in the morning?",
+          "answers": [
+            {"code": "A", "name": "None", "score": 0},
+            {"code": "B", "name": "Mild", "score": 1},
+            {"code": "C", "name": "Moderate", "score": 2},
+            {"code": "D", "name": "Severe", "score": 3},
+            {"code": "E", "name": "Extreme", "score": 4}
+          ]
+        },{
+          "code": "B2", "type": "radio",
+          "name": "How severe is your stiffness after sitting, lying, or resting in the day?",
+          "answers": [
+            {"code": "A", "name": "None", "score": 0},
+            {"code": "B", "name": "Mild", "score": 1},
+            {"code": "C", "name": "Moderate", "score": 2},
+            {"code": "D", "name": "Severe", "score": 3},
+            {"code": "E", "name": "Extreme", "score": 4}
+          ]
+        },{
+          "code": "C01", "type": "radio",
+          "name": "Descending stairs",          
+          "answers": [
+            {"code": "A", "name": "None", "score": 0},
+            {"code": "B", "name": "Mild", "score": 1},
+            {"code": "C", "name": "Moderate", "score": 2},
+            {"code": "D", "name": "Severe", "score": 3},
+            {"code": "E", "name": "Extreme", "score": 4}
+          ]
+        },{
+          "code": "C02", "type": "radio",
+          "name": "Ascending stairs",          
+          "answers": [
+            {"code": "A", "name": "None", "score": 0},
+            {"code": "B", "name": "Mild", "score": 1},
+            {"code": "C", "name": "Moderate", "score": 2},
+            {"code": "D", "name": "Severe", "score": 3},
+            {"code": "E", "name": "Extreme", "score": 4}
+          ]
+        },{
+          "code": "C03", "type": "radio",
+          "name": "Rising from sitting",
+          "answers": [
+            {"code": "A", "name": "None", "score": 0},
+            {"code": "B", "name": "Mild", "score": 1},
+            {"code": "C", "name": "Moderate", "score": 2},
+            {"code": "D", "name": "Severe", "score": 3},
+            {"code": "E", "name": "Extreme", "score": 4}
+          ]
+        },{
+          "code": "C04", "type": "radio",
+          "name": "Standing", 
+          "answers": [
+            {"code": "A", "name": "None", "score": 0},
+            {"code": "B", "name": "Mild", "score": 1},
+            {"code": "C", "name": "Moderate", "score": 2},
+            {"code": "D", "name": "Severe", "score": 3},
+            {"code": "E", "name": "Extreme", "score": 4}
+          ]
+        },{
+          "code": "C05", "type": "radio",
+          "name": "Bending to the floor", 
+          "answers": [
+            {"code": "A", "name": "None", "score": 0},
+            {"code": "B", "name": "Mild", "score": 1},
+            {"code": "C", "name": "Moderate", "score": 2},
+            {"code": "D", "name": "Severe", "score": 3},
+            {"code": "E", "name": "Extreme", "score": 4}
+          ]
+        },{
+          "code": "C06", "type": "radio",
+          "name": "Walking on flat surface",
+          "answers": [
+            {"code": "A", "name": "None", "score": 0},
+            {"code": "B", "name": "Mild", "score": 1},
+            {"code": "C", "name": "Moderate", "score": 2},
+            {"code": "D", "name": "Severe", "score": 3},
+            {"code": "E", "name": "Extreme", "score": 4}
+          ]
+        },{
+          "code": "C07", "type": "radio",
+          "name": "Getting in and out of a car, or on or off a bus",
+          "answers": [
+            {"code": "A", "name": "None", "score": 0},
+            {"code": "B", "name": "Mild", "score": 1},
+            {"code": "C", "name": "Moderate", "score": 2},
+            {"code": "D", "name": "Severe", "score": 3},
+            {"code": "E", "name": "Extreme", "score": 4}
+          ]
+        },{
+          "code": "C08", "type": "radio",
+          "name": "Going shopping",
+          "answers": [
+            {"code": "A", "name": "None", "score": 0},
+            {"code": "B", "name": "Mild", "score": 1},
+            {"code": "C", "name": "Moderate", "score": 2},
+            {"code": "D", "name": "Severe", "score": 3},
+            {"code": "E", "name": "Extreme", "score": 4}
+          ]
+        },{
+          "code": "C09", "type": "radio",
+          "name": "Putting on your socks or stockings",
+          "answers": [
+            {"code": "A", "name": "None", "score": 0},
+            {"code": "B", "name": "Mild", "score": 1},
+            {"code": "C", "name": "Moderate", "score": 2},
+            {"code": "D", "name": "Severe", "score": 3},
+            {"code": "E", "name": "Extreme", "score": 4}
+          ]
+        },{
+          "code": "C10", "type": "radio",
+          "name": "Rising from bed",
+          "answers": [
+            {"code": "A", "name": "None", "score": 0},
+            {"code": "B", "name": "Mild", "score": 1},
+            {"code": "C", "name": "Moderate", "score": 2},
+            {"code": "D", "name": "Severe", "score": 3},
+            {"code": "E", "name": "Extreme", "score": 4}
+          ]
+        },{
+          "code": "C11", "type": "radio",
+          "name": "Taking off your socks or stockings",
+          "answers": [
+            {"code": "A", "name": "None", "score": 0},
+            {"code": "B", "name": "Mild", "score": 1},
+            {"code": "C", "name": "Moderate", "score": 2},
+            {"code": "D", "name": "Severe", "score": 3},
+            {"code": "E", "name": "Extreme", "score": 4}
+          ]
+        },{
+          "code": "C12", "type": "radio",
+          "name": "Lying in bed",
+          "answers": [
+            {"code": "A", "name": "None", "score": 0},
+            {"code": "B", "name": "Mild", "score": 1},
+            {"code": "C", "name": "Moderate", "score": 2},
+            {"code": "D", "name": "Severe", "score": 3},
+            {"code": "E", "name": "Extreme", "score": 4}
+          ]
+        },{
+          "code": "C13", "type": "radio",
+          "name": "Getting in or out of bath",
+          "answers": [
+            {"code": "A", "name": "None", "score": 0},
+            {"code": "B", "name": "Mild", "score": 1},
+            {"code": "C", "name": "Moderate", "score": 2},
+            {"code": "D", "name": "Severe", "score": 3},
+            {"code": "E", "name": "Extreme", "score": 4}
+          ]
+        },{
+          "code": "C14", "type": "radio",
+          "name": "Sitting",
+          "answers": [
+            {"code": "A", "name": "None", "score": 0},
+            {"code": "B", "name": "Mild", "score": 1},
+            {"code": "C", "name": "Moderate", "score": 2},
+            {"code": "D", "name": "Severe", "score": 3},
+            {"code": "E", "name": "Extreme", "score": 4}
+          ]
+        },{
+          "code": "C15", "type": "radio",
+          "name": "Getting on or off the toilet",
+          "answers": [
+            {"code": "A", "name": "None", "score": 0},
+            {"code": "B", "name": "Mild", "score": 1},
+            {"code": "C", "name": "Moderate", "score": 2},
+            {"code": "D", "name": "Severe", "score": 3},
+            {"code": "E", "name": "Extreme", "score": 4}
+          ]
+        },{
+          "code": "C16", "type": "radio",
+          "name": "Performaning heavy domestic duties",
+          "answers": [
+            {"code": "A", "name": "None", "score": 0},
+            {"code": "B", "name": "Mild", "score": 1},
+            {"code": "C", "name": "Moderate", "score": 2},
+            {"code": "D", "name": "Severe", "score": 3},
+            {"code": "E", "name": "Extreme", "score": 4}
+          ]
+        },{
+          "code": "C17", "type": "radio",
+          "name": "Performaning light domestic duties",
+          "answers": [
+            {"code": "A", "name": "None", "score": 0},
+            {"code": "B", "name": "Mild", "score": 1},
+            {"code": "C", "name": "Moderate", "score": 2},
+            {"code": "D", "name": "Severe", "score": 3},
+            {"code": "E", "name": "Extreme", "score": 4}
+          ]
+        }
+      ]
+    }
+  </script>
+  <script defer src='../build/bundle.js'></script>
+</head>
+<body>
+</body>
+</html>

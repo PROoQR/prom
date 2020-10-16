@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset='utf-8'>
+  <meta name='viewport' content='width=device-width,initial-scale=1'>
+
+  <title>Proqrcode Survey</title>
+  <link rel='stylesheet' href='../css/bundle.css'>
+  <script>
+    var prom = {
+      "code": "womac",
+      "name": "髋膝关节疼痛调查表",
+      "lang": "zh-CN",
+      "ver": 1,
+      "intro": "填报指南: 请全部填写下面24个问题，不确定的请选择您认为最接近的。",
+      "sections": [
+        {
+          "code": "A",
+          "name": "疼痛",
+          "intro": "针对过去48小时，您髋膝关节的疼痛程度？"
+        },{
+          "code": "B",
+          "name": "僵硬",
+          "intro": "针对过去48小时，您髋膝关节的僵硬（非疼痛感）程度？"
+        },{
+          "code": "C",
+          "name": "身体机能",
+          "intro": "针对过去48小时，身体情况有哪些困难？"
+        }
+      ],
+      "questions": [
+        {
+          "code": "A1", "type": "radio",
+          "name": "在平坦的路面上行走",          
+          "answers": [
+            {"code": "A", "name": "无", "score": 0},
+            {"code": "B", "name": "轻微", "score": 1},
+            {"code": "C", "name": "中度", "score": 2},
+            {"code": "D", "name": "严重", "score": 3},
+            {"code": "E", "name": "极端", "score": 4}
+          ]
+        },{
+          "code": "A2", "type": "radio",
+          "name": "上下楼",
+          "answers": [
+            {"code": "A", "name": "无", "score": 0},
+            {"code": "B", "name": "轻微", "score": 1},
+            {"code": "C", "name": "中度", "score": 2},
+            {"code": "D", "name": "严重", "score": 3},
+            {"code": "E", "name": "极端", "score": 4}
+          ]
+        },{
+          "code": "A3", "type": "radio",
+          "name": "晚上睡觉，疼痛干扰睡眠的程度",          
+          "answers": [
+            {"code": "A", "name": "无", "score": 0},
+            {"code": "B", "name": "轻微", "score": 1},
+            {"code": "C", "name": "中度", "score": 2},
+            {"code": "D", "name": "严重", "score": 3},
+            {"code": "E", "name": "极端", "score": 4}
+          ]
+        },{
+          "code": "A4", "type": "radio",
+          "name": "坐下或者躺下时",
+          "answers": [
+            {"code": "A", "name": "无", "score": 0},
+            {"code": "B", "name": "轻微", "score": 1},
+            {"code": "C", "name": "中度", "score": 2},
+            {"code": "D", "name": "严重", "score": 3},
+            {"code": "E", "name": "极端", "score": 4}
+          ]
+        },{
+          "code": "A5", "type": "radio",
+          "name": "直立站立时",
+          "answers": [
+            {"code": "A", "name": "无", "score": 0},
+            {"code": "B", "name": "轻微", "score": 1},
+            {"code": "C", "name": "中度", "score": 2},
+            {"code": "D", "name": "严重", "score": 3},
+            {"code": "E", "name": "极端", "score": 4}
+          ]
+        },{
+          "code": "B1", "type": "radio",
+          "name": "早上起床时的僵硬程度？",
+          "answers": [
+            {"code": "A", "name": "无", "score": 0},
+            {"code": "B", "name": "轻微", "score": 1},
+            {"code": "C", "name": "中度", "score": 2},
+            {"code": "D", "name": "严重", "score": 3},
+            {"code": "E", "name": "极端", "score": 4}
+          ]
+        },{
+          "code": "B2", "type": "radio",
+          "name": "白天坐下、躺下或休息时的僵硬程度？",
+          "answers": [
+            {"code": "A", "name": "无", "score": 0},
+            {"code": "B", "name": "轻微", "score": 1},
+            {"code": "C", "name": "中度", "score": 2},
+            {"code": "D", "name": "严重", "score": 3},
+            {"code": "E", "name": "极端", "score": 4}
+          ]
+        },{
+          "code": "C01", "type": "radio",
+          "name": "下楼梯时",
+          "answers": [
+            {"code": "A", "name": "无", "score": 0},
+            {"code": "B", "name": "轻微", "score": 1},
+            {"code": "C", "name": "中度", "score": 2},
+            {"code": "D", "name": "严重", "score": 3},
+            {"code": "E", "name": "极端", "score": 4}
+          ]
+        },{
+          "code": "C02", "type": "radio",
+          "name": "上楼梯时",
+          "answers": [
+            {"code": "A", "name": "无", "score": 0},
+            {"code": "B", "name": "轻微", "score": 1},
+            {"code": "C", "name": "中度", "score": 2},
+            {"code": "D", "name": "严重", "score": 3},
+            {"code": "E", "name": "极端", "score": 4}
+          ]
+        },{
+          "code": "C03", "type": "radio",
+          "name": "从座位站起时",
+          "answers": [
+            {"code": "A", "name": "无", "score": 0},
+            {"code": "B", "name": "轻微", "score": 1},
+            {"code": "C", "name": "中度", "score": 2},
+            {"code": "D", "name": "严重", "score": 3},
+            {"code": "E", "name": "极端", "score": 4}
+          ]
+        },{
+          "code": "C04", "type": "radio",
+          "name": "站立时",
+          "answers": [
+            {"code": "A", "name": "无", "score": 0},
+            {"code": "B", "name": "轻微", "score": 1},
+            {"code": "C", "name": "中度", "score": 2},
+            {"code": "D", "name": "严重", "score": 3},
+            {"code": "E", "name": "极端", "score": 4}
+          ]
+        },{
+          "code": "C05", "type": "radio",
+          "name": "弯腰时", 
+          "answers": [
+            {"code": "A", "name": "无", "score": 0},
+            {"code": "B", "name": "轻微", "score": 1},
+            {"code": "C", "name": "中度", "score": 2},
+            {"code": "D", "name": "严重", "score": 3},
+            {"code": "E", "name": "极端", "score": 4}
+          ]
+        },{
+          "code": "C06", "type": "radio",
+          "name": "在平坦的路面上行走",
+          "answers": [
+            {"code": "A", "name": "无", "score": 0},
+            {"code": "B", "name": "轻微", "score": 1},
+            {"code": "C", "name": "中度", "score": 2},
+            {"code": "D", "name": "严重", "score": 3},
+            {"code": "E", "name": "极端", "score": 4}
+          ]
+        },{
+          "code": "C07", "type": "radio",
+          "name": "上下车时",
+          "answers": [
+            {"code": "A", "name": "无", "score": 0},
+            {"code": "B", "name": "轻微", "score": 1},
+            {"code": "C", "name": "中度", "score": 2},
+            {"code": "D", "name": "严重", "score": 3},
+            {"code": "E", "name": "极端", "score": 4}
+          ]
+        },{
+          "code": "C08", "type": "radio",
+          "name": "外出购物时",
+          "answers": [
+            {"code": "A", "name": "无", "score": 0},
+            {"code": "B", "name": "轻微", "score": 1},
+            {"code": "C", "name": "中度", "score": 2},
+            {"code": "D", "name": "严重", "score": 3},
+            {"code": "E", "name": "极端", "score": 4}
+          ]
+        },{
+          "code": "C09", "type": "radio",
+          "name": "穿袜子时",
+          "answers": [
+            {"code": "A", "name": "无", "score": 0},
+            {"code": "B", "name": "轻微", "score": 1},
+            {"code": "C", "name": "中度", "score": 2},
+            {"code": "D", "name": "严重", "score": 3},
+            {"code": "E", "name": "极端", "score": 4}
+          ]
+        },{
+          "code": "C10", "type": "radio",
+          "name": "从平躺位置，坐起时",
+          "answers": [
+            {"code": "A", "name": "无", "score": 0},
+            {"code": "B", "name": "轻微", "score": 1},
+            {"code": "C", "name": "中度", "score": 2},
+            {"code": "D", "name": "严重", "score": 3},
+            {"code": "E", "name": "极端", "score": 4}
+          ]
+        },{
+          "code": "C11", "type": "radio",
+          "name": "脱下袜子或鞋子时",
+          "answers": [
+            {"code": "A", "name": "无", "score": 0},
+            {"code": "B", "name": "轻微", "score": 1},
+            {"code": "C", "name": "中度", "score": 2},
+            {"code": "D", "name": "严重", "score": 3},
+            {"code": "E", "name": "极端", "score": 4}
+          ]
+        },{
+          "code": "C12", "type": "radio",
+          "name": "躺在床上时",
+          "answers": [
+            {"code": "A", "name": "无", "score": 0},
+            {"code": "B", "name": "轻微", "score": 1},
+            {"code": "C", "name": "中度", "score": 2},
+            {"code": "D", "name": "严重", "score": 3},
+            {"code": "E", "name": "极端", "score": 4}
+          ]
+        },{
+          "code": "C13", "type": "radio",
+          "name": "进出浴室时",
+          "answers": [
+            {"code": "A", "name": "无", "score": 0},
+            {"code": "B", "name": "轻微", "score": 1},
+            {"code": "C", "name": "中度", "score": 2},
+            {"code": "D", "name": "严重", "score": 3},
+            {"code": "E", "name": "极端", "score": 4}
+          ]
+        },{
+          "code": "C14", "type": "radio",
+          "name": "坐在位置上时",
+          "answers": [
+            {"code": "A", "name": "无", "score": 0},
+            {"code": "B", "name": "轻微", "score": 1},
+            {"code": "C", "name": "中度", "score": 2},
+            {"code": "D", "name": "严重", "score": 3},
+            {"code": "E", "name": "极端", "score": 4}
+          ]
+        },{
+          "code": "C15", "type": "radio",
+          "name": "坐上或离开马桶时",
+          "answers": [
+            {"code": "A", "name": "无", "score": 0},
+            {"code": "B", "name": "轻微", "score": 1},
+            {"code": "C", "name": "中度", "score": 2},
+            {"code": "D", "name": "严重", "score": 3},
+            {"code": "E", "name": "极端", "score": 4}
+          ]
+        },{
+          "code": "C16", "type": "radio",
+          "name": "从事繁重家务劳动时",
+          "answers": [
+            {"code": "A", "name": "无", "score": 0},
+            {"code": "B", "name": "轻微", "score": 1},
+            {"code": "C", "name": "中度", "score": 2},
+            {"code": "D", "name": "严重", "score": 3},
+            {"code": "E", "name": "极端", "score": 4}
+          ]
+        },{
+          "code": "C17", "type": "radio",
+          "name": "从事轻微家务劳动时",
+          "answers": [
+            {"code": "A", "name": "无", "score": 0},
+            {"code": "B", "name": "轻微", "score": 1},
+            {"code": "C", "name": "中度", "score": 2},
+            {"code": "D", "name": "严重", "score": 3},
+            {"code": "E", "name": "极端", "score": 4}
+          ]
+        }
+      ]
+    }
+  </script>
+  <script defer src='../js/bundle.js'></script>
+</head>
+<body>
+</body>
+</html>
