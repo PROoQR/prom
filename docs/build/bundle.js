@@ -3245,8 +3245,8 @@ var app = (function () {
     			if_block.c();
     			if_block_anchor = empty();
     			attr_dev(h3, "class", "text-center");
-    			add_location(h3, file$6, 171, 2, 4458);
-    			add_location(p, file$6, 172, 2, 4501);
+    			add_location(h3, file$6, 171, 2, 4461);
+    			add_location(p, file$6, 172, 2, 4504);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, h3, anchor);
@@ -3333,8 +3333,8 @@ var app = (function () {
     			t2 = space();
     			pre = element("pre");
     			pre.textContent = `${JSON.stringify(prom, null, 2)}`;
-    			add_location(br, file$6, 164, 2, 4271);
-    			add_location(pre, file$6, 167, 2, 4397);
+    			add_location(br, file$6, 164, 2, 4274);
+    			add_location(pre, file$6, 167, 2, 4400);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, br, anchor);
@@ -3436,9 +3436,9 @@ var app = (function () {
     			t4 = space();
     			if (if_block2) if_block2.c();
     			if_block2_anchor = empty();
-    			add_location(br0, file$6, 229, 4, 6186);
-    			add_location(br1, file$6, 230, 4, 6195);
-    			add_location(br2, file$6, 237, 4, 6413);
+    			add_location(br0, file$6, 229, 4, 6189);
+    			add_location(br1, file$6, 230, 4, 6198);
+    			add_location(br2, file$6, 237, 4, 6416);
     		},
     		m: function mount(target, anchor) {
     			if (if_block0) if_block0.m(target, anchor);
@@ -3593,7 +3593,7 @@ var app = (function () {
     			t1 = space();
     			if_block.c();
     			if_block_anchor = empty();
-    			add_location(br, file$6, 194, 4, 5176);
+    			add_location(br, file$6, 194, 4, 5179);
     		},
     		m: function mount(target, anchor) {
     			for (let i = 0; i < each_blocks.length; i += 1) {
@@ -3712,7 +3712,7 @@ var app = (function () {
     			}
 
     			each_1_anchor = empty();
-    			add_location(h5, file$6, 219, 6, 5846);
+    			add_location(h5, file$6, 219, 6, 5849);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, h5, anchor);
@@ -3798,12 +3798,12 @@ var app = (function () {
     			input.__value = input_value_value = /*a*/ ctx[37].code;
     			input.value = input.__value;
     			/*$$binding_groups*/ ctx[21][1].push(input);
-    			add_location(input, file$6, 222, 10, 5968);
-    			add_location(label, file$6, 224, 12, 6096);
+    			add_location(input, file$6, 222, 10, 5971);
+    			add_location(label, file$6, 224, 12, 6099);
     			attr_dev(div0, "class", "state p-primary block svelte-1rerc65");
-    			add_location(div0, file$6, 223, 10, 6048);
+    			add_location(div0, file$6, 223, 10, 6051);
     			attr_dev(div1, "class", "pretty p-default p-round block svelte-1rerc65");
-    			add_location(div1, file$6, 221, 8, 5913);
+    			add_location(div1, file$6, 221, 8, 5916);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div1, anchor);
@@ -4060,12 +4060,12 @@ var app = (function () {
     			div = element("div");
     			small = element("small");
     			t3 = text(/*txt_to_scan*/ ctx[11]);
-    			add_location(span, file$6, 240, 8, 6474);
+    			add_location(span, file$6, 240, 8, 6477);
     			attr_dev(p, "class", "text-center");
-    			add_location(p, file$6, 239, 6, 6442);
-    			add_location(small, file$6, 245, 8, 6620);
+    			add_location(p, file$6, 239, 6, 6445);
+    			add_location(small, file$6, 245, 8, 6623);
     			attr_dev(div, "class", "text-grey text-center block svelte-1rerc65");
-    			add_location(div, file$6, 244, 6, 6570);
+    			add_location(div, file$6, 244, 6, 6573);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, p, anchor);
@@ -4126,9 +4126,9 @@ var app = (function () {
     			div0 = element("div");
     			t = text(t_value);
     			attr_dev(div0, "class", "intro svelte-1rerc65");
-    			add_location(div0, file$6, 177, 40, 4638);
+    			add_location(div0, file$6, 177, 40, 4641);
     			attr_dev(div1, "class", "bg-dark text-white");
-    			add_location(div1, file$6, 177, 8, 4606);
+    			add_location(div1, file$6, 177, 8, 4609);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div1, anchor);
@@ -4180,8 +4180,8 @@ var app = (function () {
 
     			t2 = space();
     			hr = element("hr");
-    			add_location(h5, file$6, 181, 10, 4782);
-    			add_location(hr, file$6, 190, 10, 5126);
+    			add_location(h5, file$6, 181, 10, 4785);
+    			add_location(hr, file$6, 190, 10, 5129);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, h5, anchor);
@@ -4270,12 +4270,12 @@ var app = (function () {
     			input.__value = input_value_value = /*a*/ ctx[37].code;
     			input.value = input.__value;
     			/*$$binding_groups*/ ctx[21][0][/*q_index*/ ctx[36]].push(input);
-    			add_location(input, file$6, 184, 14, 4904);
-    			add_location(label, file$6, 186, 16, 5034);
+    			add_location(input, file$6, 184, 14, 4907);
+    			add_location(label, file$6, 186, 16, 5037);
     			attr_dev(div0, "class", "state p-primary block svelte-1rerc65");
-    			add_location(div0, file$6, 185, 14, 4982);
+    			add_location(div0, file$6, 185, 14, 4985);
     			attr_dev(div1, "class", "pretty p-default p-round block svelte-1rerc65");
-    			add_location(div1, file$6, 183, 12, 4845);
+    			add_location(div1, file$6, 183, 12, 4848);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div1, anchor);
@@ -4464,9 +4464,9 @@ var app = (function () {
     			t2 = space();
     			div = element("div");
     			create_component(button.$$.fragment);
-    			add_location(p, file$6, 212, 6, 5651);
+    			add_location(p, file$6, 212, 6, 5654);
     			attr_dev(div, "class", "bottom svelte-1rerc65");
-    			add_location(div, file$6, 213, 6, 5681);
+    			add_location(div, file$6, 213, 6, 5684);
     		},
     		m: function mount(target, anchor) {
     			if (if_block) if_block.m(target, anchor);
@@ -4581,14 +4581,14 @@ var app = (function () {
     			t4 = space();
     			div1 = element("div");
     			create_component(button.$$.fragment);
-    			add_location(span, file$6, 197, 8, 5237);
+    			add_location(span, file$6, 197, 8, 5240);
     			attr_dev(p, "class", "text-center");
-    			add_location(p, file$6, 196, 6, 5205);
-    			add_location(small, file$6, 202, 8, 5383);
+    			add_location(p, file$6, 196, 6, 5208);
+    			add_location(small, file$6, 202, 8, 5386);
     			attr_dev(div0, "class", "text-grey text-center block svelte-1rerc65");
-    			add_location(div0, file$6, 201, 6, 5333);
+    			add_location(div0, file$6, 201, 6, 5336);
     			attr_dev(div1, "class", "bottom svelte-1rerc65");
-    			add_location(div1, file$6, 204, 6, 5432);
+    			add_location(div1, file$6, 204, 6, 5435);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, p, anchor);
@@ -4661,7 +4661,7 @@ var app = (function () {
     			div = element("div");
     			t = text(/*msg*/ ctx[3]);
     			attr_dev(div, "class", "text-error");
-    			add_location(div, file$6, 209, 8, 5593);
+    			add_location(div, file$6, 209, 8, 5596);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div, anchor);
@@ -4956,7 +4956,7 @@ var app = (function () {
     	for (var i = 0; i < sections.length; i++) {
     		const s = sections[i];
 
-    		if (s.on && s.on.length) {
+    		if (s.ons && s.ons.length) {
     			hideSections.push(s);
     		} else {
     			for (var j = 0; j < questions.length; j++) {
@@ -5062,7 +5062,7 @@ var app = (function () {
     			for (var i = 0; i < hideSections.length; i++) {
     				const s = hideSections[i];
 
-    				if (s.on.includes(goto)) {
+    				if (s.ons.includes(goto)) {
     					for (var j = 0; j < questions.length; j++) {
     						const q = questions[j];
 

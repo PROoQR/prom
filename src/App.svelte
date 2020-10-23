@@ -16,7 +16,7 @@
 
   for (var i = 0; i < sections.length; i++) {
     const s = sections[i];
-    if (s.on && s.on.length) {
+    if (s.ons && s.ons.length) {
       hideSections.push(s);
     } else {
       for (var j = 0; j < questions.length; j++) {
@@ -108,7 +108,7 @@
     if (goto) {
       for (var i = 0; i < hideSections.length; i++) {
         const s = hideSections[i];
-        if (s.on.includes(goto)) {
+        if (s.ons.includes(goto)) {
           for (var j = 0; j < questions.length; j++) {
             const q = questions[j];
             if (q.code.substr(0,2) == s.code) {
