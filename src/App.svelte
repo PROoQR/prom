@@ -9,7 +9,6 @@
   let showQR = false;
   let pro = '';
   let msg = '';
-  let phone_number;
   
   let txt_required = 'Some not answered, please check!'
   let txt_submit = 'Submit';
@@ -18,7 +17,6 @@
   let txt_redo = 'Hide & Redo';
   let txt_to_scan = 'Please ask your doctor to scan and interpret, or take a screenshot for the next visit.';
   let txt_disclaimer = 'DISCLAIMER: For security and privacy concern, your data will not be uploaded onto any server and it is only submitted into a QR code on your device.';
-  let txt_phone = 'Your mobile phone number?';
   switch(prom.lang) {
     case 'zh-CN':
       txt_required = '有问题未回答，请检查！';
@@ -28,7 +26,7 @@
       txt_redo = '重填';
       txt_to_scan = '请在医生电脑旁扫码二维码，或者截屏下次再扫';
       txt_disclaimer = '声明：为了安全和隐私保护，数据不会保存在互联网上；而是压缩进了二维码，请确保仅出示给医生看！';
-      text_phone = '您的手机号？';
+      
       break;
   } 
 
@@ -40,7 +38,7 @@
   }
   function submit() {
     let count = 0;
-    pro = prom.code+':'+prom.lang+':'+prom.ver+':'+phone_number;
+    pro = prom.code+':'+prom.lang+':'+prom.ver;
     const codes = Object.keys(asks);
     for (var i = 0; i < codes.length; i++) {
       const c = codes[i];
@@ -53,10 +51,6 @@
       showQR = true;
     } else {
       msg = txt_required;
-    }
-    if (!phone_number) {
-      showQR = false;
-      msg = 'Mobile number is required for follow-up.';
     }
   }
   function redo() {
@@ -113,7 +107,7 @@
       <div class="bg-dark text-white"><div class="intro">{s.intro}</div></div>
     {/if}
     {#each questions as q}
-      {#if q.code.substr(0,1) == s.code }        
+      {#if q.code.substr(0,2) == s.code }        
         <h5>{q.name}</h5>
         {#each q.answers as a}
           {#if q.type == 'checkbox'}
@@ -137,9 +131,6 @@
       {/if}
     {/each}
   {/each}
-  <h5>{txt_phone}</h5>
-  <p><Input number bind:value={phone_number}/></p>
-
   <br>
   {#if showQR }
     <p class="text-center">
