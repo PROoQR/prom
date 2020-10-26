@@ -72,7 +72,7 @@
     for (var i = 0; i < codes.length; i++) {
       const c = codes[i];
       if (asks[c]) {
-        pro += '/' + c + ':' + asks[c];
+        pro += '/' + c + asks[c];
         count++;
       }
     }
@@ -89,7 +89,7 @@
     for (var i = 0; i < codes.length; i++) {
       const c = codes[i];
       if (asks[c]) {
-        pro += '/' + c + ':' + asks[c];
+        pro += '/' + c + asks[c];
       }
     }
     showQR = true;
@@ -171,7 +171,7 @@
 {:else}
   <h3 class="text-center">{prom.name}</h3>
   <p>{prom.intro}</p>
-  {#if prom.type == 'flat' }
+  {#if prom.type == 'SPT' }
 
     {#each sections as s}
       {#if s.intro }
@@ -215,7 +215,9 @@
         <Button primary on:click={submit} class="is-full-width">{txt_submit}</Button>
       </div>
     {/if}
-  {:else}
+  {/if}
+  
+  {#if prom.type == 'CAT' }
     {#if current }
       <h5>{current.name}</h5>
       {#each current.answers as a}
