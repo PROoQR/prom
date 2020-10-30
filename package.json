@@ -10,7 +10,7 @@
     "type": "git",
     "url": "https://github.com/prooqr/prom.git"
   },
-  "license": "MIT",
+  "license": "GPLv3",
   "devDependencies": {
     "@rollup/plugin-commonjs": "^14.0.0",
     "@rollup/plugin-node-resolve": "^8.0.0",
